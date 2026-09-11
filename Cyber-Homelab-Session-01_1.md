@@ -7,7 +7,7 @@ status: complete
 
 # Cyber Homelab — Session 01: Building the Attack Lab
 
-> **What this note is:** a full write-up of my first real lab session — building a virtual "attacker vs target" setup and running my first scan. Written so beginner-me can re-read it, understand *why* each step happened, and do it again from scratch. Nothing here assumes I already know the jargon.
+> **What this note is:** a full write-up of my first real lab session — building a virtual "attacker vs target" setup and running my first scan. Written so beginner-me can re-read it, understand *why* each step happened, and do it again from scratch. 
 ---
 
 ## The Big Picture (what I actually built)
