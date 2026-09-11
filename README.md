@@ -12,9 +12,7 @@ I'm building hands-on cybersecurity skills through a structured homelab program 
 - **Cloud:** Oracle Cloud Free Tier, AWS Free Tier
 
 ## 📋 Certifications
-- [ ] CompTIA A+ Core 1 (220-1101) — In progress
-- [ ] CompTIA A+ Core 2 (220-1102) — Upcoming
-- [ ] CompTIA Security+ SY0-701 — Upcoming
+- [ ] CompTIA Security+ SY0-701 — In Progress
 
 ## 🧪 Labs Completed
 | # | Lab | Tier | Date |
