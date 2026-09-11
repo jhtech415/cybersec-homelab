@@ -20,4 +20,4 @@ I'm building hands-on cybersecurity skills through a structured homelab program 
 | 01 | Proxmox Homelab Setup | Fundamentals | |
 
 ## 📬 Contact
-[LinkedIn | Jose Henriquez] | EMAIL : henriquezj0415@gmail.com
+[LinkedIn www.linkedin.com/in/jose-henriquez-200a82418 | Jose Henriquez] | EMAIL : henriquezj0415@gmail.com
