@@ -1,14 +1,13 @@
 ---
 title: "Cyber Homelab — Session 01: Building the Attack Lab"
 tags: [homelab, proxmox, kali, metasploitable, nmap, networking, troubleshooting]
-created: 2026-07-29
+created: 2026-08-29
 status: complete
 ---
 
 # Cyber Homelab — Session 01: Building the Attack Lab
 
-> **What this note is:** a full write-up of my first real lab session — building a virtual "attacker vs target" setup and running my first scan. Written so beginner-me can re-read it, understand *why* each step happened, and do it again from scratch. Nothing here assumes I already know the jargon; terms are defined in the [Glossary](#glossary).
-
+> **What this note is:** a full write-up of my first real lab session — building a virtual "attacker vs target" setup and running my first scan. Written so beginner-me can re-read it, understand *why* each step happened, and do it again from scratch. Nothing here assumes I already know the jargon.
 ---
 
 ## The Big Picture (what I actually built)
@@ -23,7 +22,7 @@ I built a small, self-contained network of virtual computers running on one phys
 
 All three run on **Proxmox** (the hypervisor — see glossary) at `https://10.0.0.50:8006`.
 
-The most important design choice: the target lives on an **isolated network** so it can never reach the real internet. (See [Caging the Lab](#part-4-caging-the-lab).)
+The most important design choice: the target lives on an **isolated network** so it can never reach the real internet. (See [Caging the Lab]
 
 ```
         [ My MacBook ] ---> browser + terminal
@@ -117,7 +116,7 @@ First SSH/SCP to a new machine shows its **fingerprint** and asks to continue. T
 
 **Log into Proxmox's command line:**
 ```bash
-ssh root@10.0.0.50
+ssh root@10.0.0.ip
 ```
 Prompt changes to `root@pve:~#` = I'm now typing on the Proxmox box.
 
@@ -184,7 +183,7 @@ A **snapshot** saves the entire state of a VM so I can roll back in ~10 seconds.
 
 ## Part 6: Booting & the Troubleshooting Fights
 
-*(Full symptom→fix table in [Troubleshooting Log](#troubleshooting-log). The story:)*
+*( The story:)*
 
 1. **Black screen** on the console → not broken. The text console goes blank when idle. **Click in the console, press Enter a few times.** It came back. *(Deleting/rebuilding to "fix" a blank screen is wrong — it isn't the cause.)*
 2. **`(initramfs)` prompt** → boot got interrupted before the real OS loaded; dropped into an emergency shell.
@@ -337,10 +336,4 @@ Most real security work is that **defender** column. nmap is the first tool *bot
 
 ---
 
-## Obsidian Tips (for organizing this vault)
 
-- This file's `tags:` (top) let me search all homelab notes at once — click a tag or use search `tag:#homelab`.
-- Make a note per session: `Cyber-Homelab-Session-02`, etc. Link them with `[[Cyber-Homelab-Session-02]]`.
-- Create a `[[Command Cheat Sheet]]` note and a `[[Glossary]]` note, then link to them from every session so definitions live in one place.
-- Use `- [ ]` checkboxes (like "What's Next") — Obsidian renders them as tickable to-dos.
-- A `[[Homelab MOC]]` (Map of Content) note that links to every session makes a clean table of contents as the vault grows.
