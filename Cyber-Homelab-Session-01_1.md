@@ -20,9 +20,9 @@ I built a small, self-contained network of virtual computers running on one phys
 | 101 | pfSense | **Firewall/router** | Controls and filters network traffic (set up, not used yet this session) |
 | 102 | Metasploitable | **Target** | A Linux left broken *on purpose* so I can safely practice attacking it |
 
-All three run on **Proxmox** (the hypervisor — see glossary) at `https://10.0.0.50:8006`.
+All three run on **Proxmox** (the hypervisor) at `https://10.0.0.50:8006`.
 
-The most important design choice: the target lives on an **isolated network** so it can never reach the real internet. (See [Caging the Lab]
+The most important design choice: the target lives on an **isolated network** so it can never reach the real internet. 
 
 ```
         [ My MacBook ] ---> browser + terminal
@@ -143,7 +143,7 @@ qm importdisk 102 /root/Metasploitable.vmdk local-lvm
 ### Plug it in and remove the throwaway disk (web UI)
 1. Hardware → double-click **Unused Disk 0** → Bus = **SCSI** → Add.
 2. The wizard forced a default 32 G disk earlier — remove it: select it → **Detach** → it becomes Unused → select → **Remove**.
-   - **How I knew which to delete:** the real one was **8 G / disk-1**; the throwaway was **32 G / disk-0**. Size + disk number both agreed. *(This SCSI disk later had to become IDE — see [Troubleshooting](#the-initramfs--missing-disk-fight).)*
+   - **How I knew which to delete:** the real one was **8 G / disk-1**; the throwaway was **32 G / disk-0**. Size + disk number both agreed. *(This SCSI disk later had to become IDE)*
 
 ### Boot order
 Options → Boot Order → put the Metasploitable disk **at the top and checked**, uncheck everything else.
@@ -328,8 +328,8 @@ Most real security work is that **defender** column. nmap is the first tool *bot
 
 ## What's Next
 
-- [ ] Take/confirm `baseline-clean` snapshots on VM 100 and VM 102.
-- [ ] Make the static IPs **persistent** (survive reboot).
+- [X] Take/confirm `baseline-clean` snapshots on VM 100 and VM 102.
+- [X] Make the static IPs **persistent** (survive reboot).
 - [ ] First hands-on exploit: **port 21 / vsftpd 2.3.4 backdoor** (clean, instant root, easy to understand).
 - [ ] Bring **pfSense (101)** into the picture as the lab's router/firewall.
 - [ ] Practice the **destroy-and-rebuild** drill: delete VM 102 and rebuild it from the `.vmdk` with no notes.
