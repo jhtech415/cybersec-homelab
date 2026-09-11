@@ -3,7 +3,7 @@ Jose's Cybersecurity Homelab Portfolio
 
 **Aspiring SOC Analyst | CompTIA A+ Candidate | South Jersey/Philadelphia**
 
-I'm building hands-on cybersecurity skills through a structured homelab program targeting CompTIA A+ and Security+ certifications, with a long-term goal of cleared federal/defense cyber roles.
+I'm building hands-on cybersecurity skills through a structured homelab program targeting CompTIA Network+ & Security+ certifications, with a long-term goal of cleared federal/defense cyber roles.
 
 ## 🖥️ Homelab Setup
 - **Hypervisor:** Proxmox VE on Dell OptiPlex 7060
@@ -17,7 +17,7 @@ I'm building hands-on cybersecurity skills through a structured homelab program 
 ## 🧪 Labs Completed
 | # | Lab | Tier | Date |
 |---|-----|------|------|
-| 01 | Proxmox Homelab Setup | Fundamentals | |
+| 01 | Proxmox Homelab Setup | Fundamentals | 8-29-26 |
 
 ## 📬 Contact
 [LinkedIn www.linkedin.com/in/jose-henriquez-200a82418 | Jose Henriquez] | EMAIL : henriquezj0415@gmail.com
