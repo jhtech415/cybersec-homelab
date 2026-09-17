@@ -1,7 +1,7 @@
 # cybersec-homelab
 Jose's Cybersecurity Homelab Portfolio
 
-**Aspiring SOC Analyst | CompTIA A+ Candidate | South Jersey/Philadelphia**
+**Aspiring SOC Analyst | CompTIA Net+ In Progress | South Jersey/Philadelphia**
 
 I'm building hands-on cybersecurity skills through a structured homelab program targeting CompTIA Network+ & Security+ certifications, with a long-term goal of cleared federal/defense cyber roles.
 
@@ -13,7 +13,8 @@ I'm building hands-on cybersecurity skills through a structured homelab program 
 
 ## 📋 Certifications
 - [ ] CompTIA Security+ SY0-701 — In Progress
-
+- [ ] CompTIA Network+ - In Progress
+      
 ## 🧪 Labs Completed
 | # | Lab | Tier | Date |
 |---|-----|------|------|
